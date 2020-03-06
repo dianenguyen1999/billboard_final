@@ -1,0 +1,13 @@
+<h1>Artists</h1>
+<br />
+<h2>
+  <%= artists.length <= 0 ? 'Artists' :: %>
+</h2>
+<ul>
+  <% @artists.each do |artist| %>
+  <li>
+    <%= link_to artist.name, course %>
+  </li>
+  <% end %>
+</ul>
+
